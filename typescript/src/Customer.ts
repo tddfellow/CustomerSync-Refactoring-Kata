@@ -15,6 +15,7 @@ export class Customer {
   }
 
   addShoppingList(consumerShoppingList: ShoppingList) {
+    consumerShoppingList.customerInternalId = this.internalId;
     this.shoppingLists = [...this.shoppingLists, consumerShoppingList];
   }
 
